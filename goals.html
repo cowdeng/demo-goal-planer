@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./goals.css">
+</head>
+<body>
+    <h1>Your goals (<span id="goal-count">0</span>)</h1>
+    
+    <button id="add-goal" class="plus"></button>
+    <p>Click on the added goal to add subgoals</p>
+    <form id="input-goal">
+    <input type="text" id="goal-content" name="goal" />
+      <input type="button" value="Cancel" name="cancel" class="bg-tomato" />
+      <input type="submit" value="Add" class="bg-greenyellow" />
+    </form>
+<div id="goals"></div>
+
+    <a href="./index.html" class="home">back to home page</a>
+    <script src="./goals.js"></script>
+</body>
+</html>

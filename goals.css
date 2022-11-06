@@ -1,0 +1,141 @@
+body {
+
+background-color: #587763;
+  color: #E3C770;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+  font-size: 120%;}
+
+
+h1 {
+  text-align: center;
+  font-family: 'Griffy', cursive;;
+  font-size: 500%;
+  color: #FFAE6D;
+  border: 12px;
+}
+input[type='text'] {
+  width: 80%;
+  height: 80px;
+  padding-top: 0px;
+  font-size: 200%;
+  margin-bottom: 10px;
+  border-radius: 10%;
+  border: solid #fff;
+}
+div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.goalslink {
+font-size: 200%;
+font-style: italic;
+  text-transform: capitalize;
+  padding: 5px;
+  border-radius: 8%;
+  text-decoration: none;
+  border: solid;
+  color: #E38B29;
+  background-color: #F3E0B5;
+  box-shadow: inset 0 0 0 0 #DCD7C9;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.goalslink:hover {
+  color: #C8DBBE;
+  box-shadow: inset 10000px 0 0 0 #7D6E83;;}
+
+
+input[type='button'],
+input[type='submit'] {
+  height: 70px;
+  width: 5%;
+  padding: 3px;
+  outline: none;
+  border: none;
+  margin: 2px;
+  border-radius: 10%;
+  box-shadow: 3px 3px 2px black;
+  font-size: 100%;
+}
+
+button:active,
+input[type='button']:active,
+input[type='submit']:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 2px black;
+}
+.plus {
+  --b: 12px; 
+  width: 80px; 
+  aspect-ratio: 1;
+  border: 20px solid #000; 
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#000 90deg,#fff 0) 
+    calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+    calc(50%  + var(--b))   calc(50%  + var(--b));
+  display: inline-block;
+  border-radius: 50%;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  margin-bottom: 8px;
+}
+.plus:hover {
+ width: 100px;
+  
+}
+
+
+.hide {
+  animation: slide-to-hide 500ms linear forwards;
+  display: none;
+}
+
+.show {
+  animation: slide-to-show 500ms linear forwards;
+  display: block;
+}
+
+form#input-goal {
+  height: 0;
+  overflow: hidden;
+}
+
+
+.home {
+  text-transform: capitalize;
+  border: solid #F3E0B5;
+  position: fixed;
+  bottom: 10px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10%;
+    text-decoration: none;
+    color: #F3E0B5;
+    box-shadow: inset 0 0 0 0 #DCD7C9;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.home:hover {
+  box-shadow: inset 600px 0 0 0 #2C3639;}
+
+  p {
+    position: fixed;
+    bottom: 5px;
+    color: #F3E0B5;
+    right: 10px;
+  }
+
+@keyframes slide-to-hide {
+  from {
+    height: min-content;
+  }
+  to {
+    overflow: hidden;
+    height: 0;
+  }
+}
+
+@keyframes slide-to-show {
+  to {
+    overflow: auto;
+    height: min-content;
+  }
+}
